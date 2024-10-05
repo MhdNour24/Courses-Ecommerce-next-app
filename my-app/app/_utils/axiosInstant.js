@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiKey=process.env.NEXT_PUBLIC_API_KEY
-const apiUrl="http://localhost:1337/api"
+const apiUrl="https://courses-ecommerce-backend.onrender.com/api"
 
 const axiosInstance = axios.create({
     baseURL: apiUrl,
