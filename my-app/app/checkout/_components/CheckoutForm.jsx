@@ -45,7 +45,7 @@ const CheckoutForm = ({ amount }) => {
       clientSecret,
       elements,
       confirmParams: {
-        return_url: "http://localhost:3000/payment-confirm",
+        return_url: "https://courses-ecommerce-next-app.vercel.app/payment-confirm",
       },
     });
 
