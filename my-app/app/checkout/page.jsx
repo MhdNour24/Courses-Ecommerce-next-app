@@ -8,7 +8,7 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHER_KEY);
 const Checkout = () => {
   console.log(process.env.NEXT_PUBLIC_STRIPE_PUBLISHER_KEY);
   const searchParams = useSearchParams();
-  const amount=Math.round(Number(searchParams.get("amount")))
+  const amount=Number(searchParams.get("amount"))*100
   
   const options = {
     mode: "payment",
