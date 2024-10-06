@@ -5,6 +5,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2023-08-16",
 });
 export async function POST(request: any) {
+  console.log(process.env.STRIPE_SECRET_KEY);
   const data: any = await request.json();
   const amount = data.amount;
 
