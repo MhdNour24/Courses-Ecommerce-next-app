@@ -6,6 +6,7 @@ import CheckoutForm from "./_components/CheckoutForm";
 import { useSearchParams } from "next/navigation";
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHER_KEY);
 const Checkout = () => {
+  console.log(process.env.NEXT_PUBLIC_STRIPE_PUBLISHER_KEY);
   const searchParams = useSearchParams();
   const amount=Math.round(Number(searchParams.get("amount")))
   
